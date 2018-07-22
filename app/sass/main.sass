@@ -1,0 +1,714 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+
+ 
+html, body
+	height: 3143px
+ 
+body
+	margin: 0
+	font-size: 18px
+	min-width: 315px
+	position: relative
+	font-family: $font-book
+	color: $accent
+
+h1,h2,h3,h4,h5,h6
+	margin: 0
+
+.flex
+	display: flex
+
+ul, li
+	list-style-type: none
+
+.container 
+	width: 1170px 
+	margin: auto
+
+.wrap-header-button
+	display: flex
+	justify-content: center
+	button
+		width: 55%
+		margin: 0
+		padding: 0
+		border-radius: 10px
+		border: 3px solid $accent
+		min-height: 80px
+		color: #fff
+		font-family: $font-demi
+		background-color: #ef3939
+		box-shadow: 0 0 13px rgba(0, 0, 0, 0.6)
+		&:hover
+			cursor: pointer
+		div
+			display: flex
+			justify-content: center
+			align-items: center		
+			min-height: 76px
+			border-radius: 10px	
+			font-size: 25px	 
+			//padding: 5px 20px
+			width: 100%
+			&:hover
+				background-color: #f92a2a
+				box-shadow: 0 0 15px rgba(151, 8, 8, 0.55)
+			&:active
+				background-color: #e81616
+		//	border-radius: 50px	
+		//	background-color: #ef3939
+		//	box-shadow: 0 0 13px rgba(0, 0, 0, 1)
+	
+		
+button,
+button:active, 
+button:focus
+	outline: none
+b
+	font-family: $font-heavy
+i
+	color: #8f94af
+	
+a
+	text-decoration: none
+	outline: none
+	color: $accent
+	font-family: $font-demi
+	&:hover
+		outline: none
+		color: $accent
+		text-decoration: none
+
+.header-nav
+	position: relative
+	background-color: #2f354c
+	a
+		color: #fff
+	.head-nav-container
+		.sf-menu	
+			float: none
+			text-align: center
+			margin: 0
+			>li
+				width: 120px
+				padding: 20px 0 20px 
+				position: relative
+				display: inline-block
+				z-index: 3
+				ul 
+					width: 120px
+					margin: 0
+					padding: 0
+					position: absolute
+					top: 67px
+					opacity: 0
+					transition: all .5s  
+					li
+						padding: 5px 0 5px
+						background-color: #2f354c
+						display: block 
+						color: #000
+						line-height: 2
+						z-index: 2
+			li:hover
+				background-color: darken(#2f354c, 5%)
+				ul
+					opacity: 1
+
+	 
+			
+
+.line
+	position: relative
+	z-index: 999
+	height: 7px
+	background-color: #9ca2be
+	z-index: 1
+	
+/*==================main head==============*/
+.main_head
+	position: relative
+	background-image: url(../img/header/background.jpg)
+	background-size: cover
+	background-position: right
+	padding-top: 100px
+	padding-bottom: 200px
+	//border: 1px solid#000
+	.container_main_head
+		justify-content: center
+		.main-row-head
+			flex-direction: column
+			.wrap-header-text
+				text-align: center
+				.head-main-text 
+					line-height: 69px
+					padding: 60px 0 0
+					position: relative
+					h1 
+						color: $accent //#343434
+						font-size: 75px
+						//font-family: $font-affect_light 
+						font-family: $font-affect_regular
+						//font-family: $font-affect_bold
+						//font-family: $font-capture_regular
+						//font-family: $font-book 
+						text-transform: uppercase
+						margin-bottom: 0
+						line-height: .8	
+						span 
+							position: relative
+							line-height: 0
+						.appersand
+							bottom: 10px
+							font-family: $font-book
+							font-size: 35px
+					.windows_header
+						display: none
+					.help_header
+						display: none 
+			.master_coming
+				color: #fff
+				justify-content: center
+				p
+					font-size: 25px	
+					margin-top: 0
+					text-shadow: #343434 2px 0px 2px, #343434 0px 2px 2px, #343434 0px -2px 2px, #343434 -2px 0px 2px
+				.wrap-header-button
+					text-align: center
+					display: block
+			.cell
+				justify-content: center
+				color: #ef3939
+						
+							//border: 1px	solid#000
+						
+
+// ================ services ===================
+
+.services
+	position: relative
+	z-index: 1	
+	padding: 210px 0 100px 
+	margin: 0
+	background-color: #f1f4f6
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-image: url("../img/services/fone.jpg")	
+		background-size: cover
+		background-position: center
+		opacity: .08
+	.services-warp 
+		position: relative
+		z-index: 1	
+		padding-top: 50px
+		padding-bottom: 20px 
+		text-align: center
+		grid-template-rows: 2fr
+		//border: 1px solid #000
+		.service-text
+			grid-column: 1 / 4	
+			.h1
+				position: relative
+				color: #2e324a	
+				display: inline-block
+				&:before, &:after
+					content: ''
+					display: block
+					position: absolute
+					width: 115%
+					height: 4px
+					background: #2e324a
+					top: 50%
+				&:before
+					right: 110%	
+				&:after
+					left: 110%				
+		.service-block
+			padding-top: 60px 
+			position: relative
+			grid-column-start: 2
+			grid-template-columns: repeat(3, 250px) 
+			grid-template-rows: repeat(2, 250px)
+			grid-gap: 70px
+			.service-block-item	
+				position: relative
+				z-index: 1				
+				//border: 1px solid #000
+				justify-content: center
+				&:nth-child(4)
+					grid-column: 1 / 3
+					grid-row: 2
+					position: relative
+				&:nth-child(5)
+					position: relative
+					grid-column: 2 / 4
+					grid-row: 2	
+				.serv-item
+					width: 250px 					
+					//border: 1px solid #000
+					border-radius: 10%
+					padding: 10px
+					background-color: #fff
+					box-shadow: 0 3px 0  #8d93ac
+					.items-border
+						border-radius: 10%
+						border: 2px solid #e7e7e7
+						align-content: center 
+						.item-text
+							color: #2e324a
+							font-size: 23px
+						i
+							font-size: 50px
+					&:hover
+						box-shadow: 0 3px 0  #ff2121
+						i
+							color: #ff2121
+
+
+// =====================Section-Problem===================
+
+.problen-section
+	position: relative
+	background-color: #2b2b2b
+	.section-warp
+		border: 1px #000 solid
+		position: absolute
+		grid-template-columns: repeat(25, 1fr)
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		.section-fone-right 
+			position: relative		
+			grid-column: 14 / 26
+			z-index: 1
+			background-size: cover 
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				background-color: rgba(44, 47, 62, 0.85)
+				z-index: 1
+	.problen-container
+		position: relative
+		z-index: 2
+		grid-template-columns: repeat(2, 50%)
+		padding-bottom: 60px
+		padding-top: 10px
+		.section-tilte 
+			padding: 140px 0 120px
+		.h1
+			position: relative
+			color: #fff
+			line-height: 1.15
+			// &:after
+			// 	content: ''
+			// 	display: block
+			// 	position: absolute
+			// 	width: 60%
+			// 	height: 4px
+			// 	background: #fff
+			// 	top: 50%
+			// 	left: 72%
+	.about-problem		
+		position: relative
+		justify-content: right
+		.about-problem-warp
+			text-align: center
+			justify-content: right
+			grid-template-rows: auto 1fr 
+			.about-problem-text
+				margin-top: 50px
+				margin-bottom: 20px
+				color:#fff
+				font-size: 30px	
+			.problem_wrap
+				.problem_form
+					grid-template-columns: 1fr 1fr
+					textarea
+						grid-column-start: 1
+						grid-column-end: 3
+						border-radius: 5px
+						height: 150px
+						border: 2px #2c2f3e solid
+						padding-left: 5px
+						-webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .25)       
+						box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .25)
+						color: #3b405b
+						margin: 10px 0 10px 0
+						font-family: $font-demi
+						font-size: 22px
+						resize: none
+					input
+						height: 50px
+						width: 235px
+						border-radius: 5px
+						border: 2px #2c2f3e solid
+						padding-left: 5px
+						-webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .25)       
+						box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .25)
+						color: #3b405b
+						margin: 10px 0 10px 0
+						font-family: $font-demi
+						font-size: 22px
+					.button
+						outline: none
+						border-radius: 50px
+						border: 7px solid#373737
+						color: #fff
+						font-family: $font-demi
+						background-color: #ef3939
+						cursor: pointer
+						//margin-top: 30px
+						width: 340px	
+						height: 70px 
+						font-size: 25px
+						grid-column-start: 1
+						grid-column-end: 3
+						justify-self: center
+						&:hover
+							background-color: #f92a2a
+							box-shadow: 0 0 15px rgba(151, 8, 8, 0.55)
+						&:active
+							background-color: #e81616
+
+// <!-- =================Review=====================-->
+.container-grid
+	justify-self: center 
+	width: $container_lg
+	grid-column: 1
+	background-color: #fff
+	&>*
+		position: relative
+.review-section	
+	position: relative
+	grid-template-columns: 1fr
+	background-color: #f1f4f6
+	text-align: center
+	//border: 1px #000 solid
+	grid-template-rows: 150px repeat(2, 1fr)
+	&>*
+		position: relative
+	.review-container-top
+		background-color: #f1f4f6
+		align-content: center
+		.inl-block
+			display: inline-block
+			position: relative
+			.h1
+				display: inline-block
+				position: relative
+				&:before, &:after
+					content: ''
+					display: inline-block
+					position: absolute
+					width: 100%
+					height: 4px
+					background: #2e324a
+					top: 50%
+				&:before
+					left: 110%	
+				&:after
+					right: 110%
+	.review-container-bottom
+		grid-column: 1
+		grid-row: 2/4
+		padding: 30px
+		background-color: #f1f4f6
+		&:before
+			content: ''
+			position: absolute
+			background-color: #fff
+			width: 100%
+			height: 100%
+			top: 50px
+			bottom: 0
+			right: 0
+			left: 0
+			box-shadow: 0 0 57px rgba(0, 0, 0, 0.1)
+			//border: 1px #000 solid
+		.review-container-border
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				border: 5px #eaeaea solid
+				border-top: 0
+				width: 100%
+				height: 100%
+				top: 50px
+				bottom: 0
+				right: 0
+				left: 0
+			.container
+				.review-items
+					grid-template-columns: repeat(3, 1fr)
+					grid-template-rows: repeat(3, 1fr)
+					.review-text
+						grid-column: 1 / 4
+						grid-row: 3
+						p
+							color: #2e324a
+							font-size: 18px
+							
+					.pointers
+						display: grid
+						align-content: end
+						grid-row: 2
+						.border-icon
+							display: grid
+							width: 60px
+							height: 60px
+							border: 2px #9ca2be solid
+							color: #2e324a
+							border-radius: 50%
+							font-size: 23px
+							align-items: center
+							justify-items: center	
+							position: relative
+							z-index: 2
+							&:hover
+								border: 2px #6e7594 solid
+								color: #6e7594		
+					.pointer-left
+						justify-content: left
+						grid-column: 1
+					.pointer-right	
+						justify-content: right
+						grid-column: 3
+					.person
+						grid-column: 2
+						grid-row: 1/3
+						grid-template-rows: 110px 80px 60px
+						//grid-template-columns: repeat(4, 1fr)
+						text-align: center
+						.image-pers-warp
+							grid-column: 1
+							.image-pers								
+								margin: auto
+								width: 110px
+								height: 110px										
+								background-image: url(../img/review/pers-image.png)
+								border: 5px #fff solid
+								border-radius: 50%
+								box-shadow: 0 0 40px rgba(0, 0, 0, 0.3)
+								&:before, &:after
+									content: ''
+									display: inline-block
+									position: absolute
+									width: 44% 
+									height: 5px
+									background: #eaeaea
+									
+									top: 50px
+									z-index: 10
+								&:before
+									left: 0
+								&:after
+									right: 0
+						.name-pers
+							position: relative
+							z-index: 1
+							grid-row: 2
+							grid-column: 1
+							display: grid
+							align-content: end
+							font-family: $font-heavy
+							a
+								color: #df0000
+								font-family: $font-demi
+								&:hover
+									color: #1b30fb
+									text-decoration: none
+						.review-line-warp
+							align-self: center
+							grid-column: 1
+							grid-row: 3
+							.review-line
+								display: inline-block
+								height: 5px
+								width: 165px
+								border-top: 1px solid #eaeaea
+footer
+	padding-top: 50px 
+	.footer-container							
+		position: relative
+		
+		.footer-container-warp
+			padding-top: 85px
+			grid-template-columns: repeat(3, 1fr) 	
+			grid-template-rows: 1fr	
+			justify-content: center
+			.footer-warp
+				&:nth-child(1)
+					grid-column: 1 / 2
+				&:nth-child(2)
+					grid-column: 2 / 3
+					justify-self: center
+				&:nth-child(3)	
+					grid-column: 3 / 4
+			.footer-logo
+				.logo
+					align-content: center
+					.pc-master
+						line-height: 1.15
+						font-family: $font-demi
+						font-size: 18px
+						span
+							font-family: $font-heavy
+							font-size: 25px	
+			.footer-city
+				.city
+					align-content: center
+					a
+						font-family: $font-book
+						color: #df0000
+						font-size: 16px
+						text-decoration: underline
+						&:hover
+							color: #002dff
+							text-decoration: underline
+
+			.footer-worktime
+				.worktime
+					align-content: center  
+			.footer-phone
+				.phone
+					justify-content: right
+					span
+						font-size: 22px
+						font-family: $font-book
+						span
+							font-size: 25px
+							font-family: $font-heavy
+					span:nth-child(2)	
+						text-align: right	
+						div
+							display: inline-block
+							border-bottom: 1px solid#000
+							border-style: none none dashed
+							a
+								color: #df0000
+								font-family: $font-demi
+								&:hover
+									color: #1b30fb	
+	
+	
+.section_modal_phone
+	display: none
+	position: fixed
+	width: 100%
+	height: 100%
+	z-index: 5
+	#mask
+		position: absolute
+		top: 0px
+		left: 0px
+		display: none
+		width: 100%
+		height: 100%
+		background-color: #2c2f3e
+		opacity: .9
+		z-index: 9	
+	.container_modal_phone
+		display: flex
+		position: absolute
+		width: 100%
+		height: 100%
+		#modalMain
+			position: relative
+			width: 470px
+			padding: 20px
+			margin: auto
+			margin-top: 10%
+			text-align: center
+			background-color: #fff
+			border-radius: 10px
+			//border: 3px solid #3b405b
+			z-index: 10
+			.close
+				position: absolute
+				top: -5px
+				right: -5px
+				border-radius: 100%
+				border: 3px solid
+				width: 45px
+				height: 45px
+				background-color: #ffffff
+				z-index: 3
+				cursor: pointer
+				&:before, &:after
+					content:	""
+					position: absolute
+					left: 2px
+					top: 12px
+					transform: rotate(45deg) translate(5px, 5px)
+					width: 90%
+					height: 3.5px
+					background-color: #ef3939
+					border-radius: 2px
+				&:after
+					top: 30px
+					transform: rotate(-45deg) translate(7px, -8px)
+			#phoneOrder
+				padding: 20px
+				position: relative
+				margin: auto
+				text-align: center
+				background-size: cover
+				border: 3px solid #2c2f3e
+				border-radius: 10px
+				#phoneOrderName
+					padding: 0 0 20px 0
+					position: relative
+					text-align: center
+					font-family: $font-heavy
+					color: #2c2f3e
+					font-size: 35px	
+				input
+					height: 50px
+					width: 340px
+					border-radius: 5px
+					border: 2px #2c2f3e solid
+					padding-left: 5px
+					-webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .25)       
+					box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .25)
+					color: #3b405b
+					margin: 10px 0 10px 0
+					font-family: $font-demi
+					font-size: 22px
+				#phoneName
+				#phonePhone
+				
+				.button
+					outline: none
+					border-radius: 50px
+					border: 7px solid#373737
+					color: #fff
+					font-family: $font-demi
+					background-color: #ef3939
+					cursor: pointer
+					margin-top: 30px
+					width: 340px	
+					height: 70px 
+					font-size: 25px
+					&:hover
+						background-color: #f92a2a
+						box-shadow: 0 0 15px rgba(151, 8, 8, 0.55) 
+					&:active 
+						background-color: #e81616	 
+					 
+@import "blocks/menu"  
+@import "blocks/advantages"
+@import "blocks/services"
+
+@import "media"

@@ -1,0 +1,58 @@
+@font-face {
+font-family: "AvenirNextW10-Book";  
+src: url("../fonts/AvenirNextW10-Book.otf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+
+font-family: "AvenirNextW10-Demi";  
+src: url("../fonts/AvenirNextW10-Demi.otf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
+@font-face {
+
+font-family: "AvenirNextW10-Heavy";  
+src: url("../fonts/AvenirNextW10-Heavy.otf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+
+font-family: "AvenirNextW10-HeavyBold";  
+src: url("../fonts/AvenirNextW10-HeavyBold.otf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
+@font-face {
+
+font-family: "AvenirNextW10-Light";  
+src: url("../fonts/AvenirNextW10-Light.otf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+
+font-family: "AvenirNextW10-Medium";  
+src: url("../fonts/AvenirNextW10-Medium.otf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
+@font-face {
+
+font-family: "AvenirNextW10-Thin";  
+src: url("../fonts/AvenirNextW10-Thin.otf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+
+font-family: "AvenirNextW10-UltraLight";  
+src: url("../fonts/AvenirNextW10-UltraLight.otf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 

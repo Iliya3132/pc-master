@@ -1,0 +1,96 @@
+#countdown{
+	position:relative;
+	top:10px;
+	left:0px;
+}
+.countdownHolder{
+	position:relative;
+	top:10px;
+	left:120px;
+	width:450px;
+	float:right;
+	font: 30px/1.5 'Open Sans Condensed',sans-serif;
+	text-align:center;
+	letter-spacing:-3px;
+	
+}
+#exitTime{
+	position:relative;
+	top:5px;
+}
+.position{
+	display: inline-block;
+	height: 50px;
+	margin-right:-3px;
+	overflow: hidden;
+	position: relative;
+	width: 25px;
+	
+}
+
+.digit{
+	position:absolute;
+	display:block;
+	width:25px;
+  	height:47px;
+	background-color:#666;
+	border-radius:0.2em;
+	text-align:center;
+	font-size:36px;
+	color:#26a2ff;
+	
+	letter-spacing:-1px;
+}
+
+.digit.static{
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.5, #333333),
+		color-stop(0.5, #333333)
+	);
+}
+
+/**
+ * Вы можете использовать данные классы для скрытия
+ * частей счетчика, которые не нужны.
+ */
+
+.countDays{ /* display:none !important;*/ }
+.countDiv0{ /* display:none !important;*/ }
+.countHours{}
+.countDiv1{}
+.countMinutes{}
+.countDiv2{}
+.countSeconds{}
+
+
+.countDiv{
+	display:inline-block;
+	width:10px;
+	height:1.6em;
+	position:relative;
+	margin-left:5px;
+	/border:1px solid#000;
+}
+
+.countDiv:before,
+.countDiv:after{
+	position:absolute;
+	width:5px;
+	height:5px;
+	background-color:#26a2ff;
+	border-radius:50%;
+	left:50%;
+	margin-left:-3px;
+	top:0.5em;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:'';
+}
+
+.countDiv:after{
+	top:0.9em;
+}

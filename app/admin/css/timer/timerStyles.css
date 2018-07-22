@@ -1,0 +1,39 @@
+#bodyTime{
+position:absolute;
+top:60px;
+right:10px;
+width:430px;
+height:40px;
+/border:1px solid#000;
+
+}
+.time{
+	position:relative;
+	width:50px;
+	border-radius:20px;
+	margin-right:5px;
+	font-size:150%;
+}
+#buttTime{
+position:absolute;
+right:0px;
+
+}
+#XbuttTime{
+position:absolute;
+right:0;
+top:-25px;
+
+}
+#buttStopTime{
+position:absolute;
+
+font-size:50%;
+}
+
+
+
+
+
+
+

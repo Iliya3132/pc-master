@@ -1,0 +1,66 @@
+
+/**/
+body{
+background-color:#e5eaed;
+}
+#back{
+position:absolute;
+width: 100%;
+height: 115%;
+top: 0px;
+left: 0px;
+
+background-size:cover;
+opacity: 0.7;
+z-index:-1;
+
+}
+.mainDiv{
+width: 100%;
+height: 100%;
+padding-bottom: 200px;
+}
+#allHeader{
+	position:relative;
+	left: 100px;
+	width: 1200px;
+	height: 227px;
+	display: block;	
+	text-align: left;		
+}
+
+/**/
+#orders{
+	width:1200px;
+	height:500px;		
+}
+#selectMain{
+width:1000px;	
+font-size:24px;
+border: 1px solid black;
+background-color:rgba(255,255,255,0.8);
+}
+#selectMain th, td{
+border: 1px solid black;
+}
+.nameSelect{
+	width:1000px;
+font-size:30px;
+color:#FFF;
+background-color: #2c2f3e;
+}
+
+.description_textarea{
+	resize: none;
+	font-size: 22px;
+	height: 100px;
+	width: 100%;
+}
+/**/
+
+
+
+
+
+
+
