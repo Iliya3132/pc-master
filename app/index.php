@@ -1,6 +1,6 @@
 ﻿<?php include("modal/baza.php");?> 
 <!DOCTYPE html>
-
+ <!-- -->
 
 <html lang="ru"> 
 
