@@ -114,7 +114,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="wrap-header-text">
 						<div class="head-main-text">
 							<h1 class="help_header">ремонт<br /><span>компьютеров</span><br /><span class="appersand"><!-- & -->&</span><br>установка<br />windows</h1>
-							<!-- <h1 class="h1 windows_header">Установка<br>и настройка<br>Windows в Киеве</h1> -->
 						</div>
 				</div>
 
@@ -450,7 +449,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 	</footer> -->
+	
+	<script src="js/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
+
 </body>
 
 </html>

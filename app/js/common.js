@@ -5,7 +5,9 @@ $(function(){
 			$('#mask').css("display", "none");
 			$('.modal_phone_button').removeAttr('id');
 		}
+
 		hide();
+		
 		var href = document.location.href;
 		/// определяем ссылку
 		if(~href.indexOf("pc-master.loc")){
@@ -147,7 +149,7 @@ $(function(){
 		in_bd("evoke_master",phoneName,phonePhone,"*Вызов мастера*", "modal/handlerModalPhone.php");	
 				
 		});
-
+ 
 
 		// Форма отправки описания проблеммы		
 		$('body').on('click','.problem_description', function(){

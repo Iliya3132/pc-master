@@ -18,7 +18,7 @@ var gulp           = require('gulp'),
 
 gulp.task('common-js', function() {
 	return gulp.src([
-		'app/js/common.js',
+		'app/js/common.js',	
 		])
 	.pipe(concat('common.min.js'))
 	.pipe(uglify())
