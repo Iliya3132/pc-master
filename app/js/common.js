@@ -1,5 +1,6 @@
 $(function(){
 	
+		
 		function hide(){
 			$('.section_modal_phone').css("display", "none");
 			$('#mask').css("display", "none");
@@ -34,13 +35,13 @@ $(function(){
 
 
 		function auto_complit(type){
-			if(type!="problem"){
+			if(type!="fix"){
 				$('input#phoneName').val('Ваше имя:');
 				$('input#phonePhone').val('Ваш телефон:');
 			}else{
-				$('#problem_name').val('Ваше имя:');
-				$('#problem_phone').val('Ваш телефон:');
-				$('.description_problem_text').val('Опишите проблему тут...');
+				$('#fix_name').val('Ваше имя:');
+				$('#fix_phone').val('Ваш телефон:');
+				$('.fix_description').val('Опишите ее тут...');
 			}
 				
 		}
@@ -98,13 +99,13 @@ $(function(){
 					}
 		})
 	//	фокус на textarea 
-	$('.description_problem_text').focus(function(){
-			if($(this).val()=="Опишите проблему тут..."){
+	$('.fix_description').focus(function(){
+			if($(this).val()=="Опишите ее тут..."){
 				temp = $(this).val()
 				$(this).val('');
 				}
 	})
-		$('.description_problem_text').blur(function(){
+		$('.fix_description').blur(function(){
 			if(($(this).val()=='')){
 				$(this).val(temp);
 				}
@@ -152,24 +153,24 @@ $(function(){
  
 
 		// Форма отправки описания проблеммы		
-		$('body').on('click','.problem_description', function(){
-			var phoneName, phonePhone, description_problem;		
-		if( ($('input#problem_name').val() == '') || ($('input#problem_name').val() == 'Ваше имя:')){
-			$("input#problem_name").focus();
+		$('body').on('click','.fix_button_description', function(){
+			var phoneName, phonePhone, fix_description;		
+		if( ($('input#fix_name').val() == '') || ($('input#fix_name').val() == 'Ваше имя:')){
+			$("input#fix_name").focus();
 			return false;
 		}else{
-		phoneName = $('input#problem_name').val();
+		phoneName = $('input#fix_name').val();
 		}
-		if( ($('input#problem_phone').val() == '') || ($('input#problem_phone').val() == 'Ваш телефон:')){
+		if( ($('input#fix_phone').val() == '') || ($('input#fix_phone').val() == 'Ваш телефон:')){
 			
-			$("input#problem_phone").focus();
+			$("input#fix_phone").focus();
 			return false;
 		}else{
-		phonePhone = $('input#problem_phone').val();
+		phonePhone = $('input#fix_phone').val();
 		}
-		description_problem = $('.description_problem_text').val();
+		fix_description = $('.fix_description').val();
 
-		in_bd("problem",phoneName,phonePhone,description_problem, "modal/description_problem.php");
+		in_bd("fix",phoneName,phonePhone,fix_description, "modal/fix_description.php");
 			
 				
 		});

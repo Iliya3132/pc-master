@@ -319,7 +319,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="fix_offer flex">
 					<div class="wrap_fix_offer flex">
 						<div class="fix_ofer_title flex">Мы определим неполадку<br />еще ДО нашего приезда</div>
-						<form action="none" class="wrap_fix_form flex">
+						<form action="" method="post" class="wrap_fix_form flex" onsubmit="return false;">
 							<textarea class="fix_description" name="fix_description">Опишите ее тут...</textarea>
 							<input size="15" type="text" name="fix_name" id="fix_name" value="Ваше имя:" class="input-text">
 							<input size="15" type="text" name="fix_phone" id="fix_phone" value="Ваш телефон:" class="input-text">
