@@ -27,7 +27,7 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/jquery.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
@@ -50,7 +50,7 @@ gulp.task('sass', function() {
 	.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 25 versions']))
-	.pipe(cleanCSS()) // Опционально, закомментировать при отладке
+	//.pipe(cleanCSS()) // Опционально, закомментировать при отладке
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}));
 });
@@ -69,7 +69,7 @@ gulp.task('imagemin', function() {
 });
 
 gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
-
+	
 	var buildFiles = gulp.src([
 		'app/*.html',
 		'app/**/*.php',
@@ -80,11 +80,15 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 		'app/css/main.min.css',
 		'app/css/**/*.css',
 		'app/css/libs.css',
-		]).pipe(gulp.dest('../dist/css'));
+		])
+		.pipe(cleanCSS())
+		.pipe(concat('main.min.css'))
+		.pipe(gulp.dest('../dist/css'));
 	
 	var buildAdminCss = gulp.src([
 		'app/admin/**/*.css',
-		]).pipe(gulp.dest('../dist/admin'));	
+		])
+		.pipe(gulp.dest('../dist/admin'));	
 	
 	var buildAdminJs = gulp.src([
 		'app/admin/**/*.js',
