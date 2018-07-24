@@ -299,38 +299,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 			</div>
 
-			<!-- <div class="service-block-item grid "> 
-				<div class="serv-item item3 grid">
-					<div class="items-border grid">
-						<i class="serv-icon-wi-fi"></i>
-						<div class="item-text">Настройка Wi-fi
-							<br> роутера, сети</div>
-					</div>
-				</div>
-			</div>
-			<div class="service-block-item grid">
-				<div class="serv-item item4 grid">
-					<div class="items-border grid">
-						<i class="serv-icon-web-interface"></i>
-						<div class="item-text">Установка
-							<br> программ</div>
-					</div>
-				</div>
-			</div>
-			<div class="service-block-item grid">
-				<div class="serv-item item5 grid">
-					<div class="items-border grid">
-						<i class="serv-icon-virus"></i>
-						<div class="item-text">Удаление
-							<br> вирусов</div>
-					</div>
-				</div>
-			</div>-->
 		</div>
 	</div>
 </section>
+
+
+
+
 	<!-- ========================================================== -->
 
+	<section class="section_fix flex">
+		<div class="container container_fix flex">
+			<div class="wrap_fix flex">
+				<div class="fix_title flex">
+					<div class="wrap_fix_h4 flex">
+						<h4>у вас<br />неполадка с<br />компьютером?</h4>
+					</div>
+				</div>
+				<div class="fix_offer flex">
+					<div class="wrap_fix_offer flex">
+						<div class="fix_ofer_title flex">Мы определим неполадку<br />еще ДО нашего приезда</div>
+						<form action="none" class="wrap_fix_form flex">
+							<textarea class="fix_description" name="fix_description">Опишите ее тут...</textarea>
+							<input size="15" type="text" name="fix_name" id="fix_name" value="Ваше имя:" class="input-text">
+							<input size="15" type="text" name="fix_phone" id="fix_phone" value="Ваш телефон:" class="input-text">
+							<input type="submit" class="fix_button_description wrap_button" name="fix_send" value="Рассказать о проблеме">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- <section class="problen-section grid">
 		<div class="section-warp grid">
 			<div class="section-fone-right" style="background-image: url(img/problem/right.png);"></div>

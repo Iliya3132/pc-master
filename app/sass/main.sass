@@ -17,6 +17,9 @@ body
 
 h1,h2,h3,h4,h5,h6
 	margin: 0
+	text-transform: uppercase
+	font-family: $font-affect_regular
+
 
 .flex
 	display: flex
@@ -36,7 +39,7 @@ ul, li
 		margin: 0
 		padding: 0
 		border-radius: 10px
-		border: 3px solid $accent
+		border: 3px solid $accent 
 		min-height: 80px
 		color: #fff
 		font-family: $font-demi
@@ -151,11 +154,10 @@ a
 						color: $accent //#343434
 						font-size: 75px
 						//font-family: $font-affect_light 
-						font-family: $font-affect_regular
+						//font-family: $font-affect_regular
 						//font-family: $font-affect_bold
 						//font-family: $font-capture_regular
 						//font-family: $font-book 
-						text-transform: uppercase
 						margin-bottom: 0
 						line-height: .8	
 						span 
@@ -710,5 +712,6 @@ footer
 @import "blocks/menu"  
 @import "blocks/advantages"
 @import "blocks/services"
+@import "blocks/fix"
 
 @import "media"

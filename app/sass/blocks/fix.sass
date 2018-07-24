@@ -1,0 +1,90 @@
+@import "../vars"
+
+.section_fix
+	position: relative
+	background-color: #2b2b2b
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		right: 0
+		width: 50%
+		height: 100%
+		z-index: 1
+		background-image: url(../img/problem/right.png)
+		background-size: cover
+	&:before
+		content: ''
+		position: absolute
+		width: 50%
+		height: 100% 
+		right: 0
+		background-color: rgba(44,47,62,.85)
+		z-index: 2
+	.container_fix
+		padding: 10px 0 60px
+		position: relative
+		z-index: 3
+		.wrap_fix
+			flex-direction: row
+			flex-grow: 1
+			.fix_title
+				flex-basis: 50%
+				.wrap_fix_h4
+					h4
+						align-self: center
+						font-size: 70px
+						line-height: .8
+						color: #fff
+
+			.fix_offer
+				flex-basis: 50%
+				.wrap_fix_offer
+					flex-direction: column
+					align-content: center
+					.fix_ofer_title
+						margin: 50px 0 20px
+						justify-content: center
+						font-size: 30px
+						text-align: center
+						color: #fff
+					.wrap_fix_form
+						flex-wrap: wrap
+						padding: 0 55px
+						justify-content: center
+						.fix_description
+							width: 100%
+							border-radius: 5px
+							height: 150px
+							border: 2px #2c2f3e solid
+							padding-left: 5px
+							box-shadow: 0 0 15px 0 rgba(0,0,0,.25)
+							color: #3b405b
+							margin: 10px 0 10px 0
+							font-family: AvenirNextW10-Demi
+							font-size: 22px
+							resize: none
+						input 
+							flex-direction: row
+							width: 48%
+							height: 50px
+							border-radius: 5px
+							border: 2px #2c2f3e solid
+							padding-left: 5px
+							box-shadow: 0 0 15px 0 rgba(0,0,0,.25)
+							color: #3b405b
+							margin: 10px 0 10px 0
+							font-family: AvenirNextW10-Demi
+							font-size: 22px
+						.fix_button_description
+							width: 70%
+							border: 3px solid #373737
+							border-radius: 10px
+							color: #fff
+							font-family: AvenirNextW10-Demi
+							background-color: #ef3939
+							cursor: pointer
+							width: 340px
+							height: 70px
+							font-size: 22px
+							justify-self: center
