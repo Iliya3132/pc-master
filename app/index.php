@@ -43,7 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2VFP29"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-
+<div id="mask_menu"></div>
 
 
 <section class="section_modal_phone">
@@ -70,18 +70,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 			 
 
+
 <section class="section_menu flex">
 	<div class="container container_menu flex">
 		<div class="warp_content_menu flex">
 
 			<div class="wrap_logo flex">
-
 				<a href="#" class="logo flex">
 					<span class="main_logo flex"><b>Pc-master</b></span>
 					<span class="main_logo_descripton flex">Компьютерный сервис</span>
 				</a> 
-				
-
 			</div>
 				
 			
@@ -100,9 +98,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 			<div class="wrap_toggle_menu flex">
 				<div class="line_toggle_menu">
-					<a href="#" class="toggle_mnu flex"><span></span></a>
+					<a href="#" onclick="return false" class="toggle_menu flex"><span></span></a>
 				</div>
 			</div>
+
+			<div class="main_menu flex">
+						<ul class="menu_ul flex">
+							<a href="#" class="menu_link"><div class="glav flex">Главная</div></a>
+							<a href="#section_adv" class="menu_link" ><div class="adv flex">Преимушества</div></a>
+							<a href="#section_serv"class="menu_link" ><div class="services flex">Услуги</div></a>
+							<a href="#section_fix"class="menu_link" ><div class="consult flex">Консультация</div></a>
+							<!-- <a href="#" ><div class="contacts flex">Контакты</div></a> -->
+						</ul>	
+				</div>
 	</div>
 
 </section>
@@ -131,7 +139,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header> 
 
 
-<section class="section_adv flex">
+<section class="section_adv flex" id='section_adv'>
 	<div class="container_adv flex">
 
 		<div class="title_adv flex">
@@ -235,7 +243,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
 </section>
 
-<section class="section_serv flex">
+<section class="section_serv flex " id='section_serv'>
 	<div class="container container_serv flex">
 		<div class="wrap_h3 flex">
 			<h3>услуги</h3>
@@ -303,12 +311,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
 </section>
 
-
-
-
 	<!-- ========================================================== -->
 
-	<section class="section_fix flex">
+	<section class="section_fix flex" id='section_fix'>
 		<div class="container container_fix flex">
 			<div class="wrap_fix flex">
 				<div class="fix_title flex">
@@ -330,35 +335,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</div>
 	</section>
-	<!-- <section class="problen-section grid">
-		<div class="section-warp grid">
-			<div class="section-fone-right" style="background-image: url(img/problem/right.png);"></div>
-		</div>
-		<div class="container  grid">
-			<div class="line"></div>
-			<div class="problen-container grid">
-				<div class="section-tilte h1">у вас
-					<br>
-					<span>неполадка</span>
-					<br> с компьютером?</div>
-				<div class="about-problem grid">
-					<div class="about-problem-warp grid">
-						<div class="about-problem-text">Мы определим неполадку
-							<br> еще ДО нашего приезда </div>
-							<div class="problem_wrap">											 
-								<form  action="" class="grid problem_form" method="post" id="problem_form" name="problemMainOeder" onsubmit="return false;">
-									<textarea class="description_problem_text" name="problem_description" >Опишите проблему тут...</textarea>
-									<input size="15" type="text" name="problem_name"  id="problem_name" value="Ваше имя:" class="input-text"> 
-									<input size="15" type="text" name="problem_phone" id="problem_phone" value="Ваш телефон:" class="input-text">
-								
-								 <input  type="submit" class="problem_description button" name="problemSend" value="Рассказать о проблеме"></input>
-								 </form>
-							</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
 
 	<!-- =================Review=====================-->
 
@@ -411,6 +387,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
+ <footer class="section_footer">
+	<div class="container container_footer">
+		<div class="warp_content_footer flex">
+
+			<div class="wrap_logo flex">
+				<a href="#" class="logo flex">
+					<span class="main_logo flex"><b>Pc-master</b></span>
+					<span class="main_logo_descripton flex">Компьютерный сервис</span>
+				</a> 
+			</div>
+				
+
+			<div class="wrap_phones_footer flex">
+				<div class="wrap_phones flex">
+					<div class="phones flex">
+						<span class="operator mts"><span class="big">+38</span>(099)220-35-38</span>
+						<span class="operator life"><span class="big">+38</span>(093)537-35-22</span>
+					</div>
+					<div class="phone_button flex">
+						<a href="#" class="phoneButton">Заказать звонок</a>
+					</div>
+				</div>
+			</div>
+			</div>
+	</div>
+ </footer>
+
 
 	<!-- <footer class="section-footer">
 		<div class="container footer-container grid">
@@ -449,7 +452,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 	</footer> -->
 	
-	<script src="js/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 
 </body>

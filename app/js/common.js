@@ -1,6 +1,21 @@
 $(function(){
 	
-		
+	$('.toggle_menu').click(function(){
+		$(this).toggleClass("on");
+		$("#mask_menu").slideToggle(5);
+		$(".main_menu").slideToggle(500);
+		//$(".main_menu").css({'display' : 'flex'});
+	});
+	$("#mask_menu").click(function(){
+		$(".toggle_menu").toggleClass("on");
+		$("#mask_menu").slideToggle(5);
+		$(".main_menu").slideToggle(500);
+	});
+	$(".menu_link").click(function(){
+		$(".toggle_menu").toggleClass("on");
+		$("#mask_menu").slideToggle(5);
+		$(".main_menu").slideToggle(500);
+	});
 		function hide(){
 			$('.section_modal_phone').css("display", "none");
 			$('#mask').css("display", "none");

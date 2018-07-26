@@ -1,0 +1,41 @@
+@import "../vars"
+
+.section_footer
+	position: relative 
+	padding: 15px 0 15px 0
+	.container_footer
+		.warp_content_footer
+			width: 100%
+			justify-content: space-between
+			.wrap_logo
+				align-self: center
+				font-size: 22px 
+				.logo 
+					flex-direction: column 
+					justify-content: center
+					.main_logo
+						font-size: 30px
+						line-height: 1.1
+					.main_logo_descripton
+						line-height: .8
+						font-size: 20px
+			.wrap_phones_footer
+				flex-direction: row
+				.wrap_phones
+					flex-direction: column
+					font-size: 22px
+					.phones
+						flex-direction: column
+						.operator
+							b
+								font-size: 25px
+					.phone_button
+						justify-content: flex-end
+						.phoneButton
+							display: inline-block
+							color: #df0000
+							font-family: $font-demi
+							border-bottom: 1px solid#000
+							border-style: none none dashed
+							&:hover
+								color: #1b30fb

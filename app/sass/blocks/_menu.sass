@@ -1,20 +1,19 @@
 @import "../vars"
 
+
 .section_menu
-	position: relative 
-		
 	.container_menu
 		position: relative
+		padding: 15px 0 0 0
 		flex-direction: column
+		.main_menu
+			display: none
 		.warp_content_menu
-			padding-top: 5px 0 0 0
 			width: 100%
 			justify-content: space-between
 			.wrap_logo
 				align-self: center
-				font-size: 22px
-				flex-direction: row
-				flex-direction: column 
+				font-size: 22px 
 				.logo 
 					flex-direction: column 
 					justify-content: center
@@ -25,7 +24,7 @@
 						line-height: .8
 						font-size: 20px
 
-			.wrap_phones_menu
+			.wrap_phones_menu 
 				flex-direction: row
 				.wrap_phones
 					flex-direction: column
@@ -37,6 +36,7 @@
 								font-size: 25px
 					.phone_button
 						justify-content: flex-end
+						padding-bottom: 10px
 						.phoneButton
 							display: inline-block
 							color: #df0000
@@ -46,40 +46,79 @@
 							&:hover
 								color: #1b30fb
 		.wrap_toggle_menu
+			position: relative
+			z-index: 7
 			display: none
 			background-color: $accent
 			.line_toggle_menu
 				align-self: start
-				.toggle_mnu
-					width: 30px
-					height: 30px
-					color: #fff //#2c2f3e
-					padding: 5px 15px
-					span 
-						position: relative
-						top: 0px
-						display: flex
-						align-self: center
-						width: 100%
-						height: 3px
-						background-color: #fff //#343434
-						transition: all 0.3s	
-						backface-visibility: hidden
-						border-radius: 2px
-						&:before, &:after
-							content: ""
-							display: block
-							position: absolute
+				.toggle_menu
+					&
+						width: 30px
+						height: 30px
+						color: #fff //#2c2f3e
+						padding: 5px 15px
+						&.on span 
+							background-color: transparent
+						&.on span:before 
+							transform: rotate(-45deg) translate(7px, -8px)
+						&.on span:after 
+							transform: rotate(45deg) translate(5px, 5px)
+						&.on + #menu 
+							opacity: 1
+							visibility: visible
+						span 
+							position: relative
+							top: 0px
+							display: flex
+							align-self: center
 							width: 100%
 							height: 3px
 							background-color: #fff //#343434
-							transition: all 0.3s
+							transition: all 0.3s	
 							backface-visibility: hidden
 							border-radius: 2px
-						&:before
-							content: ''
-							font-size: 15px
-							top: 9px
-						&:after
-							left: 0
-							top: -9px
+							&:before, &:after
+								content: ""
+								display: block
+								position: absolute
+								width: 100%
+								height: 3px
+								background-color: #fff //#343434
+								transition: all 0.3s
+								backface-visibility: hidden
+								border-radius: 2px
+							&:before
+								content: ''
+								font-size: 15px
+								top: 9px
+							&:after
+								left: 0
+								top: -9px
+		.main_menu
+			position: relative
+			height: 100%
+			width: 100%
+			z-index: 10
+
+			ul 
+				width: 100%
+				height: 100%
+				flex-direction: column
+				margin: 0
+				padding: 0
+				a 
+					font-family: $font-demi
+					font-size: 30px
+					border-bottom: 1px solid $accent
+					position: relative
+					list-style: none
+					padding: 10px 15px
+					color: $accent
+					text-decoration: none
+					&:hover
+						border-bottom: 1px solid #ff2121
+						color: #ff2121
+					div
+						justify-content: flex-end
+						
