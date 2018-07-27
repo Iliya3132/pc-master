@@ -776,6 +776,89 @@ a {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
+    .section_adv .container_adv .container_price {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .section_adv .container_adv .container_price .price_title {
+        text-align: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font-size: 75px;
+        line-height: 69px;
+        text-transform: uppercase;
+        font-family: "Affect_regular";
+        text-align: center;
+        color: #fff;
+        margin: auto; }
+      .section_adv .container_adv .container_price .wrap_price {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 40px 20%;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .section_adv .container_adv .container_price .wrap_price .price_item {
+          background-color: #fff;
+          padding: 10px 15px;
+          border: 2px #2c2f3e solid;
+          -webkit-border-radius: 5px;
+                  border-radius: 5px;
+          -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+                  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+          color: #3b405b;
+          margin: 5px 0;
+          font-family: AvenirNextW10-Book;
+          font-size: 22px;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          .section_adv .container_adv .container_price .wrap_price .price_item .price_name {
+            max-width: 70%;
+            text-align: left; }
+          .section_adv .container_adv .container_price .wrap_price .price_item .price_cost {
+            -webkit-align-self: center;
+                -ms-flex-item-align: center;
+                    align-self: center; }
+        .section_adv .container_adv .container_price .wrap_price .wrap_price_form {
+          margin-top: 40px;
+          border-top: 2px solid #fff;
+          border-bottom: 2px solid #fff;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          .section_adv .container_adv .container_price .wrap_price .wrap_price_form input {
+            background-color: #fff;
+            padding: 10px 15px;
+            font-size: 22px;
+            border: 2px #2c2f3e solid;
+            -webkit-border-radius: 5px;
+                    border-radius: 5px;
+            -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+                    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+            color: #3b405b;
+            font-family: "AvenirNextW10-Demi";
+            margin: 5px 0;
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1; }
+            .section_adv .container_adv .container_price .wrap_price .wrap_price_form input.price_button {
+              background-color: #ef3939;
+              color: #fff;
+              border: 3px solid #373737; }
     .section_adv .container_adv .title_adv .container {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
@@ -1180,17 +1263,19 @@ a {
     width: 970px; }
   .main_head {
     padding-bottom: 150px; }
-  .problen-section .problen-container .section-tilte {
-    padding: 130px 0 120px; }
-  .problen-section .about-problem {
-    grid-template-columns: auto auto;
-    padding-right: 10px; }
-    .problen-section .about-problem .about-problem-warp .about-problem-text {
-      font-size: 22px; }
-    .problen-section .about-problem .about-problem-warp button {
-      width: 270px;
-      height: 98px;
-      font-size: 20px; }
+  .section_adv .container_adv .container_price .wrap_price {
+    padding: 40px 5%;
+    justify-self: center; }
+    .section_adv .container_adv .container_price .wrap_price .wrap_price_form {
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      width: 50%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
   .section_fix .container_fix {
     padding: 10px 0 60px;
     position: relative;
@@ -1296,7 +1381,20 @@ a {
       .section_serv .container_serv .wrap_serv_items {
         padding-top: 20px; }
         .section_serv .container_serv .wrap_serv_items .wrap_item {
-          margin: 15px; } }
+          margin: 15px; }
+  .section_adv .container_adv .container_price .wrap_price {
+    padding: 40px 5%;
+    justify-self: center; }
+    .section_adv .container_adv .container_price .wrap_price .wrap_price_form {
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      width: 70%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 @media (max-width: 768px) {
   .container {
@@ -1336,7 +1434,7 @@ a {
           bottom: 5px;
           font-family: "AvenirNextW10-Book"; }
   .section_adv {
-    padding: 70px 0 30px 0;
+    padding: 10px 0 30px 0;
     margin: 0;
     background-color: #2c2f3e;
     text-align: center;
@@ -1355,6 +1453,23 @@ a {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
+      .section_adv .container_adv .container_price .price_title {
+        font-size: 55px; }
+      .section_adv .container_adv .container_price .wrap_price {
+        padding: 10px 0 20px;
+        justify-self: center; }
+        .section_adv .container_adv .container_price .wrap_price .price_item {
+          font-size: 18px; }
+        .section_adv .container_adv .container_price .wrap_price .wrap_price_form {
+          -webkit-align-self: center;
+              -ms-flex-item-align: center;
+                  align-self: center;
+          width: 90%;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
       .section_adv .container_adv .title_adv .container {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
@@ -1462,7 +1577,7 @@ a {
     .main_head .container_main_head .main-row-head .master_coming p {
       font-size: 20px; }
   .section_adv {
-    padding: 30px 0 30px 0;
+    padding: 10px 0 30px 0;
     margin: 0;
     background-color: #2c2f3e;
     text-align: center;
@@ -1481,6 +1596,24 @@ a {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
+      .section_adv .container_adv .container_price .price_title {
+        font-size: 35px;
+        line-height: 35px; }
+      .section_adv .container_adv .container_price .wrap_price {
+        padding: 10px 0 20px;
+        justify-self: center; }
+        .section_adv .container_adv .container_price .wrap_price .price_item {
+          font-size: 16px; }
+        .section_adv .container_adv .container_price .wrap_price .wrap_price_form {
+          -webkit-align-self: center;
+              -ms-flex-item-align: center;
+                  align-self: center;
+          width: 90%;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
       .section_adv .container_adv .title_adv .container {
         -webkit-box-pack: center;
         -webkit-justify-content: center;

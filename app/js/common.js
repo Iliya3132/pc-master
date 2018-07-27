@@ -53,6 +53,11 @@ $(function(){
 			if(type!="fix"){
 				$('input#phoneName').val('Ваше имя:');
 				$('input#phonePhone').val('Ваш телефон:');
+				if(type=="price"){
+					$('input#price_form_name').val('Ваше имя:');
+					$('input#price_form_phone').val('Ваш телефон:');
+				}
+
 			}else{
 				$('#fix_name').val('Ваше имя:');
 				$('#fix_phone').val('Ваш телефон:');
@@ -166,6 +171,27 @@ $(function(){
 				
 		});
  
+		// Форма отправки уточнение прайса
+		$('body').on('click','.price_button', function(){
+			var phoneName, phonePhone;		
+		if( ($('input#price_form_name').val() == '') || ($('input#price_form_name').val() == 'Ваше имя:')){
+			$("input#price_form_name").focus();
+			return false;
+		}else{
+		phoneName = $('input#price_form_phone').val();
+		}
+		if( ($('input#price_form_phone').val() == '') || ($('input#price_form_phone').val() == 'Ваш телефон:')){
+			
+			$("input#price_form_phone").focus();
+			return false;
+		}else{
+		phonePhone = $('input#price_form_phone').val();
+		}
+
+		in_bd("price",phoneName,phonePhone,"*Уточтить цену*", "modal/handlerModalPhone.php");	
+				
+		});		
+
 
 		// Форма отправки описания проблеммы		
 		$('body').on('click','.fix_button_description', function(){

@@ -105,7 +105,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="main_menu flex">
 						<ul class="menu_ul flex">
 							<a href="#" class="menu_link"><div class="glav flex">Главная</div></a>
-							<a href="#section_adv" class="menu_link" ><div class="adv flex">Преимушества</div></a>
+							<a href="#price_title" class="menu_link" ><div class="price flex">Прайс</div></a>
+							<a href="#title_adv" class="menu_link" ><div class="adv flex">Преимушества</div></a>
 							<a href="#section_serv"class="menu_link" ><div class="services flex">Услуги</div></a>
 							<a href="#section_fix"class="menu_link" ><div class="consult flex">Консультация</div></a>
 							<!-- <a href="#" ><div class="contacts flex">Контакты</div></a> -->
@@ -128,7 +129,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="master_coming flex"><p>Гарантия на все виды работ</p></div>
 
 				<div class="wrap-header-button">
-					<button class="evoke_master">
+					<button id='price_title' class="evoke_master">
 						<div>Вызвать мастера</div>
 					</button>
 				</div>
@@ -141,6 +142,79 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="section_adv flex" id='section_adv'>
 	<div class="container_adv flex">
+		<div class="container container_price flex">
+			
+			<div class="price_title flex" >
+				<span>Прайс</span>
+			</div>		
+
+			<div class="wrap_price flex">
+				<div class="flex price_item price_item1">
+					<div class="flex price_name">Выезд специалиста по Киеву</div>
+					<div class="flex price_cost">0 грн</div>
+				</div>
+				<div class="flex price_item price_item2">
+					<div class="flex price_name">Диагностика компьютера</div>
+					<div class="flex price_cost">100 грн</div>
+				</div>
+
+				<div class="flex price_item price_item3">
+					<div class="flex price_name">Установка Windows 10</div>
+					<div class="flex price_cost">350 грн</div>
+				</div>
+				<div class="flex price_item price_item4">
+					<div class="flex price_name">Установка Windows 7/8/xp</div>
+					<div class="flex price_cost">250 грн </div>
+				</div>
+				<div class="flex price_item price_item5">
+					<div class="flex price_name">Установка набора стандартных программ</div>
+					<div class="flex price_cost">150 грн </div>
+				</div>
+				
+				<div class="flex price_item">
+					<div class="flex price_name">Установка специализированых программ (Visio, Photoshop, Autocad...)</div>
+					<div class="flex price_cost">150 грн</div>
+				</div>
+
+				<div class="flex price_item">
+					<div class="flex price_name">Установка Microsoft Office <br />(Word, Exel, PPoint)</div>
+					<div class="flex price_cost">250 грн</div>
+				</div>
+
+				<div class="flex price_item">
+					<div class="flex price_name">Удаление вирусов</div>
+					<div class="flex price_cost">100 грн</div>
+				</div>
+
+				<div class="flex price_item">
+					<div class="flex price_name">Установка антивирусника</div>
+					<div class="flex price_cost">250 грн</div>
+				</div>
+
+				<div class="flex price_item">
+					<div class="flex price_name">Оптимизация работы Windows <br /> ускоряет работу компьютера до 250% </div>
+					<div class="flex price_cost">300 грн</div>
+				</div>
+				
+				<div class="flex price_item">
+					<div class="flex price_name">Настройка родительского контроля (установка ограничений на опасные сайты)</div>
+					<div class="flex price_cost">350 грн</div>
+				</div>
+				
+				<div class="flex price_item">
+					<div class="flex price_name">Сброс забытого пароля Windows</div>
+					<div class="flex price_cost" id="title_adv">350 грн</div>
+				</div>
+
+				<form action="" method="post" class="wrap_price_form flex" onsubmit="return false;" >
+					<input size="15" type="text" name="price_form_name" id="price_form_name" value="Ваше имя:" class="input-text">
+					<input size="15" type="text" name="price_form_phone" id="price_form_phone" value="Ваш телефон:" class="input-text">
+					<input type="submit" class="price_button wrap_button" name="price_send" value="Уточнить цену">
+				</form>
+
+			</div>
+		</div>
+
 
 		<div class="title_adv flex">
 				<div class="container flex">
@@ -207,7 +281,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 				</div>
 
-				<div class="item_adv item_adv5 flex">
+				<div class="item_adv item_adv5 flex" id='section_serv'>
 						<div class="adv-icon flex">
 							<div class="wrap_icon">
 								<div class="num-icon flex">5</div>
@@ -221,7 +295,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 				</div>
 
-				<div class="item_adv item_adv6 flex">
+				<div class="item_adv item_adv6 flex" >
 						<div class="adv-icon flex">
 							<div class="wrap_icon">
 								<div class="num-icon flex">6</div>
@@ -230,7 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</div>
 						</div>
-						<div class="advant-text">
+						<div class="advant-text" >
 								<div class="adv-first-text">Бесплатный выезд мастера</div>
 						</div>
 				</div>
@@ -243,7 +317,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
 </section>
 
-<section class="section_serv flex " id='section_serv'>
+<section class="section_serv flex " >
 	<div class="container container_serv flex">
 		<div class="wrap_h3 flex">
 			<h3>услуги</h3>
@@ -284,7 +358,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 
-			<div class="wrap_item flex">
+			<div class="wrap_item flex" id='section_fix'>
 				<div class="serv_item_border flex">
 					<div class="wrap_icon flex">
 						<i class="serv-icon-web-interface serv_icon"></i>
@@ -295,7 +369,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 
-			<div class="wrap_item flex">
+			<div class="wrap_item flex" >
 				<div class="serv_item_border flex">
 					<div class="wrap_icon flex">
 						<i class="serv-icon-virus serv_icon"></i>
@@ -313,7 +387,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<!-- ========================================================== -->
 
-	<section class="section_fix flex" id='section_fix'>
+	<section class="section_fix flex" >
 		<div class="container container_fix flex">
 			<div class="wrap_fix flex">
 				<div class="fix_title flex">
@@ -414,45 +488,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
  </footer>
 
-
-	<!-- <footer class="section-footer">
-		<div class="container footer-container grid">
-			<div class="footer-container-warp grid">
-				<div class="footer-warp grid footer-logo">
-					<div class="logo grid">
-						<a href="#1" class="pc-master">
-							<span>Pc-master</span>
-							<br>Компьютерный сервис</a>
-					</div>
-				</div>
-				<div class="footer-warp grid footer-worktime">
-					<div class="worktime grid">
-						<span>Пн-пт
-							<b> c 10:00 до 20:00
-								<br />
-							</b>
-						</span>
-						<span>Сб-вс
-							<b> с 10:00 до 18:00 </b>
-						</span>
-
-					</div>
-				</div>
-				<div class="footer-warp grid footer-phone">
-					<div class="phone grid">
-						<span>+38(095)<b> 608-16-72</b></span>
-						</span>
-						<span>
-							<div>
-								<a href="#1" class="phoneButton" >Заказать звонок</a>
-							</div>
-						</span>
-					</div> 
-				</div>
-			</div>
-	</footer> -->
-	
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.min.js?v=<?=time();?>"></script>
 
 </body>
 

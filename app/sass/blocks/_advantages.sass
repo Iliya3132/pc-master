@@ -12,6 +12,62 @@
 		width: $container_lg
 		align-content: center
 		flex-direction: column
+		.container_price
+			flex-direction: column
+			.price_title
+				text-align: center
+				justify-content: center
+				font-size: 75px
+				line-height: 69px
+				text-transform: uppercase
+				font-family: "Affect_regular"	
+				text-align: center
+				color: #fff
+				margin: auto
+			.wrap_price
+				flex-direction: column
+				padding: 40px 20%
+				border-radius: 5px
+				justify-content: center
+				.price_item
+					background-color: #fff
+					padding: 10px 15px
+					border: 2px #2c2f3e solid
+					border-radius: 5px
+					box-shadow: 0 0 15px 0 rgba(0,0,0,.25)
+					color: #3b405b
+					margin: 5px 0
+					font-family: AvenirNextW10-Book
+					font-size: 22px
+					justify-content: space-between
+					.price_name
+						max-width: 70%
+						text-align: left
+					.price_cost
+						align-self: center
+				.wrap_price_form
+					margin-top: 40px
+					border-top: 2px solid #fff
+					border-bottom: 2px solid #fff
+					justify-content: space-between
+					input
+						background-color: #fff
+						padding: 10px 15px
+						font-size: 22px
+						border: 2px #2c2f3e solid
+						border-radius: 5px
+						box-shadow: 0 0 15px 0 rgba(0,0,0,.25)
+						color: #3b405b
+						font-family: $font-demi
+						margin: 5px 0
+						flex-grow: 1
+						&.price_button
+							background-color: #ef3939
+							color: #fff
+							border: 3px solid #373737
+
+
+			
 		.title_adv		
 			.container
 				justify-content: center
