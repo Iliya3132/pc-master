@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /admin/*
+Disallow: /fonts/*
+Disallow: /img/*
+Disallow: /modal/*
+Disallow: /.htaccess
+Disallow: /google-site-verification googleb674fb9b91af1fcf.html
+Disallow: /master.rar
+Disallow: /pc-master.sql
+
+User-agent: Googlebot
+Disallow: /admin/*
+Disallow: /fonts/*
+Disallow: /img/*
+Disallow: /modal/*
+Disallow: /.htaccess
+Disallow: /google-site-verification googleb674fb9b91af1fcf.html
+Disallow: /master.rar
+Disallow: /pc-master.sql

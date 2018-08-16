@@ -13,15 +13,40 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-122214809-1'); 
+  gtag('config', 'AW-797146162');
+
 </script>
   
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M2VFP29');</script>
-<!-- End Google Tag Manager --> 
+
+	<script type="application/ld+json">
+        {
+         "@context" : "http://schema.org",
+         "@type" : "Organization",
+         "name" : "«Pc-master» - сеть сервисных центров",
+         "url" : "https://www.pc-master.com.ua/",
+         "sameAs" : []
+        }
+</script>
+
+  <!-- Event snippet for Клик - заказ conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-797146162/xtysCJyntYYBELL4jfwC',
+      'value': 1.0,
+      'currency': 'UAH',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 
 	<meta http-equiv="Pragma" content="no-cache" />
 	<meta http-equiv="cache-control" content="no-cache">
@@ -34,11 +59,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="icon" href="favicon.ico.png" type="image/x-icon">
 	<meta name="description" content="Ремонт компьютеров в Киеве. Работаем быстро и качественно! Бесплатный выезд мастера. Звоните! +38(093)537-35-22, +38(095) 608-16-72">
 
-	<title>Ремонт компьютеров в Киеве! на дому или офисе  - Pc-master.com.ua</title>
+	<title>Ремонт компьютеров в Киеве! на дому или офисе</title>
 </head>
  
 <body>
-
+ 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2VFP29"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -122,7 +147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="main-row-head flex">
 				<div class="wrap-header-text">
 						<div class="head-main-text">
-							<h1 class="help_header">ремонт<br /><span>компьютеров</span><br /><span class="appersand"><!-- & -->&</span><br>установка<br />windows</h1>
+							<h1 class="help_header">ремонт<br /><span>компьютеров</span><br /><span class="appersand"><!-- & --></span><br>установка<br />windows</h1>
 						</div>
 				</div>
 
@@ -249,7 +274,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</div>
 						</div>
 						<div class="advant-text">
-								<div class="adv-first-text">Гарантия на все виды работ</div>
+								<div class="adv-first-text">Осуществляем гарантийный ремонт до 3 лет</div>
 						</div>				
 				</div>
 
@@ -277,7 +302,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</div>
 						</div>
 						<div class="advant-text">
-								<div class="adv-first-text">Мастера с опытом работы от 7 лет</div>
+								<div class="adv-first-text">Квалифицированные мастера с опытом работы</div>
 						</div>
 				</div>
 

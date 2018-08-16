@@ -148,6 +148,7 @@ $(function(){
 		phonePhone = $('input#phonePhone').val();
 		}		
 			in_bd("call_back",phoneName,phonePhone,"*Звонок*", "../modal/handlerModalPhone.php");
+			gtag_report_conversion();
 		});
 
 // Форма отправки на Вызов мастера		
@@ -168,7 +169,7 @@ $(function(){
 		}
 
 		in_bd("evoke_master",phoneName,phonePhone,"*Вызов мастера*", "modal/handlerModalPhone.php");	
-				
+		gtag_report_conversion();		
 		});
  
 		// Форма отправки уточнение прайса
@@ -189,6 +190,7 @@ $(function(){
 		}
 
 		in_bd("price",phoneName,phonePhone,"*Уточтить цену*", "modal/handlerModalPhone.php");	
+		gtag_report_conversion();
 				
 		});		
 

@@ -260,14 +260,22 @@ a {
             color: #2c2f3e;
             font-size: 75px;
             margin-bottom: 0;
-            line-height: .8; }
+            line-height: .8;
+            position: relative; }
             .main_head .container_main_head .main-row-head .wrap-header-text .head-main-text h1 span {
-              position: relative;
               line-height: 0; }
             .main_head .container_main_head .main-row-head .wrap-header-text .head-main-text h1 .appersand {
               bottom: 10px;
               font-family: "AvenirNextW10-Book";
               font-size: 35px; }
+              .main_head .container_main_head .main-row-head .wrap-header-text .head-main-text h1 .appersand:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background: #2e324a;
+                top: 52%; }
           .main_head .container_main_head .main-row-head .wrap-header-text .head-main-text .windows_header {
             display: none; }
           .main_head .container_main_head .main-row-head .wrap-header-text .head-main-text .help_header {
